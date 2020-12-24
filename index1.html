@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- META TAGS -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- STYLES -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/fullpage.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+<!-- SITE TITLE -->
+<title>Dear V.</title>
+</head>
+<body>
+
+<!-- AUDIO PLAYER -->
+<audio class="audio-player" autoplay loop>
+	<source src="audio/Mark O'Connor _ Jane Monheit _ Yo-Yo Ma - We Wish You a Merry Christmas.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BACKGROUND CONTAINER -->
+<div class="bg-container snowy">
+	<!-- GLASS BALL -->
+	<div class="glass-ball rotate"></div>
+	<!-- TOP LIGHT -->
+	<div class="top-light"></div>
+	<!-- PAGE CONTENT -->
+	<div class="page-content">
+		<div class="fullpage">
+			<!-- HOME SECTION -->
+			<div id="home" class="section active">
+				<!-- TITLE -->
+				<h1 class="snow-text">Xmas Coming Soon</h1>
+				<!-- COUNTER -->
+				<div class="snow-box">
+					<div class="countdown" data-date="December 25 2020 00:00:00"></div>
+				</div>
+				<div class="smallSnowText">本santa就随便整点礼物了</div>
+			</div>
+			<!-- INFO SECTION -->
+			<div id="info" class="section">
+				<!-- <span id="doot"></span> -->
+				<div class="container">
+					<!-- INFO TEXT -->
+					<div class="shadow-box" >
+						<h2>For Veronica</h2>
+						<p>本想写点“月色真美”的，却发现本人已被现实码农化了，再也不是那个代写情书的江郎喽。
+							那就简简单单地祝王女士（ps:记得点“然后”）：
+							
+						<p class='words' >1）圣诞快乐  </p>	
+						<p class='words'  hidden>2）一直快乐</p>
+						<p class='words'   hidden>3）本学期成为满绩怪</p>
+						<p class='words'  hidden>4）之后也是满绩怪</p>
+						<p class='words'  hidden>5）总是遇见晴天</p>
+						<p class='words'  hidden>6 却越晒越白</p>
+						<p class='words'  hidden>7)会变得大咧自私一些——总想着不麻烦别人好累吧</p>
+						<p class='words'  hidden>8)能变得随心所欲——外强中干恐怕是你吧</p>
+						<p class='words'  hidden>9)变得坏一些 ——乖乖的容易吃亏吧</p>
+						<p class='words'  hidden>10)能被我带坏</p>
+		
+						<p class='words'  hidden >1000）希望你能喜欢这个域名——sorry啦, veronicasparlour被注册了。</p>
+						<button id='displayButton' >然后</button>
+					</div>
+
+					<!-- SOCIAL ICONS -->
+					<!-- <ul class="social-icons">
+						<li><a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="#" title="Contact"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					</ul> -->
+				</div>
+			</div>
+			<!-- CONTACT SECTION -->
+			<div id="fourth" class="section">
+				<!-- <h1></h1>
+				 -->
+				<p>雪景不错吧</p>
+				<!-- <img src="img/green valley.jpg" alt=""> -->
+			</div>
+			<div id="fifth" class="section">
+				<!-- <h1></h1>
+				 -->
+				<p>觉得不错的朋友可以点个赞</p>
+				<p>不满意也可以直接在这吐槽</p>
+				<!-- <img src="img/green valley.jpg" alt=""> -->
+			</div>
+			<div id="contact" class="section">
+				<div class="container">
+					<!-- CONTACT TEXT -->
+					<div class="shadow-box">
+						<h3>吐槽盒</h3>
+						<p>伤心事、开心事、大心事、小心事……凡是想说的事，都可以马上找马尚吐槽。
+							或者，如果看他不顺眼，也可以在这留言给他。</p>
+					</div>
+					<!-- CONTACT FORM -->
+	
+					<div class="contact">
+						<div id="contact-result">
+							<!-- CONTACT RESULT HOLDER -->
+						</div>
+						<form class="contact-form ajax-form" name="contact" action="contacts.php" method="POST" data-result="#contact-result">
+							<div class="form-group">
+								<input name="name" id="name" type="text" class="form-control" value="" placeholder="Name">
+							</div>
+							<!-- <div class="form-group">
+								<input name="email" type="text" class="form-control" value="" placeholder="Email">
+							</div> -->
+							<div class="form-group">
+								<textarea name="message" id="message" class="form-control" placeholder="Message"></textarea>
+							</div>
+							<div class="form-group">
+								<input name="submit" id='submit' class="btn-submit" type="submit" value="says">
+							</div>
+							<!-- <div id='print'>saas</div> -->
+							<table id="tab" border="1">
+
+								</table>
+
+
+					</div>
+				</div>
+			</div>
+			<div id="final" class="section">
+				<!-- <h1></h1>
+				 -->
+				<h1>Merry Christmas</h1>
+				<!-- <img src="img/green valley.jpg" alt=""> -->
+			</div>
+			
+		</div>
+	</div>
+</div>
+<script language="javascript" type="text/javascript">
+	var numberW=0;
+
+	document.getElementById("submit").addEventListener("click", setVars); 
+	bt=document.getElementById("displayButton")
+	bt.addEventListener("click", fuc); 
+
+	function fuc(){
+		if (numberW==10) {
+		bt.innerText='无了';
+		return 	;
+		}
+	numberW=numberW+1;
+	var p = document.getElementsByClassName("words");
+	p[numberW].removeAttribute('hidden');
+
+}
+
+function setVars(){
+//Set the variables
+var name = document.getElementById("name").value;
+
+var c=document.getElementById('tab');
+var child=document.createElement('div');
+var msgNode=document.getElementById('message');
+msg=msgNode.value;
+child.setAttribute('class','snow-text');
+child.setAttribute('style','font-size:3em');
+child.innerText=name+" says: "+msg;
+c.appendChild(child);
+// c.textContent=name;
+};
+
+
+
+
+
+
+</script>
+<!-- SCRIPTS  -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/countdown.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="js/three.canvas.js"></script>
+<script type="text/javascript" src="js/snowy.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/focus.js"></script>
+
+</body>
+</html>
