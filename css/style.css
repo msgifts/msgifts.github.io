@@ -732,7 +732,7 @@ a, a:link, a:visited, a:hover, a:active
 	margin:0 auto;
 	max-width:1920px;
 	background-color:#000;
-	background-image:url('../img/bg.jpg');
+	/* background-image:url('../img/bg.jpg'); */
 	background-position:top center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -900,7 +900,7 @@ a, a:link, a:visited, a:hover, a:active
 	width:115px;
 	height:108px;
 	position:absolute;
-	background-image:url('../img/bell.png');
+	/* background-image:url('../img/bell.png'); */
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:contain;
